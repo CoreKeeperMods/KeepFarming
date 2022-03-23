@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <AssemblyName>KeepFarming</AssemblyName>
+    <Description>My first plugin</Description>
+    <Version>1.0.0</Version>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BepInEx.IL2CPP" Version="6.0.0-*" IncludeAssets="compile" />
+    <PackageReference Include="BepInEx.PluginInfoProps" Version="1.*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="CoreLib">
+      <HintPath>..\CoreLib\bin\Debug\netstandard2.1\CoreLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2Cppmscorlib">
+      <HintPath>..\CoreLib\bin\Debug\netstandard2.1\Il2Cppmscorlib.dll</HintPath>
+    </Reference>
+    <Reference Include="Pug.Core">
+      <HintPath>..\CoreLib\bin\Debug\netstandard2.1\Pug.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Pug.Other">
+      <HintPath>..\CoreLib\bin\Debug\netstandard2.1\Pug.Other.dll</HintPath>
+    </Reference>
+    <Reference Include="PugWorldGen">
+      <HintPath>..\CoreLib\bin\Debug\netstandard2.1\PugWorldGen.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\CoreLib\bin\Debug\netstandard2.1\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>
