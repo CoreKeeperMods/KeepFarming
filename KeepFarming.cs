@@ -4,9 +4,14 @@ using BepInEx.Logging;
 using HarmonyLib;
 
 namespace KeepFarming {
-    [BepInPlugin(PluginInfo.PLUGIN_GUID, PluginInfo.PLUGIN_NAME, PluginInfo.PLUGIN_VERSION)]
-    [BepInDependency(CoreLib.PluginInfo.PLUGIN_GUID, CoreLib.PluginInfo.PLUGIN_VERSION)]
+    [BepInPlugin(GUID, NAME, VERSION)]
+    [BepInDependency("com.le4fless.corelib", "0.0.1")]
     public class KeepFarming : BasePlugin {
+
+        public const string GUID = "com.le4fless.keepfarming";
+        public const string NAME = "KeepFarming";
+        public const string VERSION = "0.0.1";
+
         internal static ManualLogSource Logger { get; private set; }
         public override void Load() {
             Logger = base.Log;
@@ -14,7 +19,7 @@ namespace KeepFarming {
             var harmony = new Harmony("com.le4fless.keepfarming");
             harmony.PatchAll();
 
-            Log.LogInfo($"Plugin {PluginInfo.PLUGIN_GUID} is loaded!");
+            Log.LogInfo($"{PluginInfo.PLUGIN_NAME} is loaded!");
         }
     }
 }
