@@ -1,4 +1,7 @@
-# CoreLib
-This library can be used to get some main objects of the game.
+# Keep Farming
+A mod to improve farming for all!
+
+Current features:
+- Get XP when watering crops
 
 WIP
