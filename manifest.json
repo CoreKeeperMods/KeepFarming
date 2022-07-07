@@ -1,9 +1,9 @@
 {
 	"name": "KeepFarming",
 	"description": "Just some farming addons and fixes",
-	"version_number": "0.0.1",
+	"version_number": "0.0.2",
 	"dependencies": [
-		"CoreMods-CoreLib-0.0.1"
+		"CoreMods-CoreLib-0.1.0"
 	],
 	"website_url": "https://github.com/Jrprogrammer/KeepFarming"
 }

@@ -5,12 +5,12 @@ using HarmonyLib;
 
 namespace KeepFarming {
     [BepInPlugin(GUID, NAME, VERSION)]
-    [BepInDependency("com.le4fless.corelib", "0.0.1")]
+    [BepInDependency("com.le4fless.corelib", "0.1.0")]
     public class KeepFarming : BasePlugin {
 
         public const string GUID = "com.le4fless.keepfarming";
         public const string NAME = "KeepFarming";
-        public const string VERSION = "0.0.1";
+        public const string VERSION = "0.0.2";
 
         internal static ManualLogSource Logger { get; private set; }
         public override void Load() {
